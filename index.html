@@ -21,18 +21,28 @@
     <noscript>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&amp;family=Lato:wght@300;400;500&amp;display=swap">
     </noscript>
-    <link rel="stylesheet" href="/assets/css/common.css?v=1615443456517">
-    <script src="/assets/js/common.js?v=1615443456517" defer></script>
+    <link rel="stylesheet" href="/assets/css/common.css?v=1616587772648">
+    <script src="/assets/js/common.js?v=1616587772649" defer></script>
   </head>
   <body>
     <div class="l-container">
       <header class="m-header">
         <div class="l-inner">
           <div class="hero">
-            <picture class="img">
-              <source srcset="/assets/img/home/hero.webp" type="image/webp"><img src="/assets/img/home/hero.jpg" width="690" height="1160" loading="lazy" alt="">
+            <picture class="img c-pc">
+              <source srcset="/assets/img/home/hero_pc.webp" media="(min-width:768px)" type="image/webp">
+              <source srcset="/assets/img/home/hero_pc.jpg" media="(min-width:768px)" type="image/jpg"><img src="hero_pc.jpg" width="1200" height="630" loading="lazy" alt="">
             </picture>
-            <p class="txt">YOSHIKI<br>YAMAOKA</p>
+            <picture class="img c-sp">
+              <source srcset="/assets/img/home/hero.webp" media="(max-width:767px)" type="image/webp">
+              <source srcset="/assets/img/home/hero.jpg" media="(max-width:767px)" type="image/jpg"><img src="hero.jpg" width="690" height="1160" loading="lazy" alt="">
+            </picture>
+            <p class="txt">
+              <picture>
+                <source srcset="/assets/img/home/logo_pc.svg" media="(min-width:768px)">
+                <source srcset="/assets/img/home/logo.svg" media="(max-width:767px)"><img src="/assets/img/home/logo.svg" loading="lazy" alt="YOSHIKI YAMAOKA">
+              </picture>
+            </p>
           </div>
           <h1 class="name" id="profile"><span class="ja">山岡 よしき</span><span class="en">Yoshiki Yamaoka</span></h1>
           <p class="title">俳優 / ダンサー / 演出家 / バリスタ</p>
